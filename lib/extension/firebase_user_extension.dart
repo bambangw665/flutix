@@ -11,7 +11,8 @@ extension FirebaseUserExtenson on FirebaseUser {
         this.email,
         name: name,
         balance: balance,
-        selectedGenres: selectedGenres,
+        selectdGenres: selectedGenres,
         selectedLanguage: selectedLanguage,
+        profilePicture: '',
       );
 }

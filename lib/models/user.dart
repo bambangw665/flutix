@@ -10,11 +10,11 @@ class User extends Equatable {
   final int balance;
 
   User(this.id, this.email,
-      {this.profilePicture,
-      this.name,
-      this.selectdGenres,
-      this.selectedLanguage,
-      this.balance});
+      {required this.name,
+      required this.profilePicture,
+      required this.balance,
+      required this.selectdGenres,
+      required this.selectedLanguage});
 
   @override
   // TODO: implement props
