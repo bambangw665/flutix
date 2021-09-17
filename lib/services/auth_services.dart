@@ -8,6 +8,11 @@ class AuthServices {
     try {
       AuthResult result = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
+
+      User user = result.user.convertToUser(
+          name: name,
+          selectedGenres: selectdGenres,
+          selectedLanguage: selectedLanguage);
     } catch (e) {}
   }
 }

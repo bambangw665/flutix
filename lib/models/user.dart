@@ -9,8 +9,12 @@ class User extends Equatable {
   final String selectedLanguage;
   final int balance;
 
-  User(this.id, this.email, this.profilePicture, this.name, this.selectdGenres,
-      this.selectedLanguage, this.balance);
+  User(this.id, this.email,
+      {this.profilePicture,
+      this.name,
+      this.selectdGenres,
+      this.selectedLanguage,
+      this.balance});
 
   @override
   // TODO: implement props
